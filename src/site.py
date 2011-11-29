@@ -10,7 +10,7 @@ from bottle import run, route, static_file, view
 def index():
     return dict()
 
-@route('/static/<filename>')
+@route('/static/<filename:re:.*>')
 def server_static(filename):
     return static_file(filename, root='./static/')
 
