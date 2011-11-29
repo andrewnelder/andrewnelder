@@ -61,13 +61,18 @@ table{
 }
 
 #name-heading {
-	font-size: 22px;
+	font-size: 60px;
+	font-weight: bold;
+	letter-spacing: -0.1 em;
+	text-transform: uppercase;
+	display: inline-block;
 }
 
 #name-subheading {
 	font-size: 14px;
 	text-align: right;
 	color: #808080;
+	letter-spacing: +0 em;
 }
 
 /* Contact Information: Classes */

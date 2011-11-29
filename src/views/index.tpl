@@ -11,7 +11,7 @@
 				<div id="contact-sidebar" class="sidebar"></div>
 				<div id="contact-bodybar" class="bodybar">
 					<div id="contact-container">
-						<!-- <div id="name-heading">Andrew Nelder<br /><div id="name-subheading">B.Eng. EIT</div></div> -->
+						<div id="name-heading">Andrew Nelder<br /><div id="name-subheading">B.Eng. EIT</div></div>
 						<p>Professionally, in the past 5 years, I've been a programmer, a researcher, and scientist -- and I wouldn't want to have it any other way.  I've got a strong background in programming tasks centered around big data, natural language and machine learning; but I also have a soft-spot for web development and design.</p>
 						<p>In my spare time, I'm an avid pc-gamer and part-time dungeon master.  My collection of rpg-books would <i>petrify</i> Gary Gygax (God rest his soul).</p>
 						<p>						
