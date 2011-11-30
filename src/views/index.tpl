@@ -5,6 +5,7 @@
 <link href="../static/css/style.css" rel="stylesheet" type="text/css" />
 </head>
 <body>
+	<div id="header-div"></div>
 	<div id="body-div">
 		<div id="cv">
 			<div id="cv-content">
@@ -12,7 +13,7 @@
 				<div id="contact-bodybar" class="bodybar">
 					<div id="contact-container">
 						<div id="name-heading">Andrew Nelder<br /><div id="name-subheading">B.Eng. EIT</div></div>
-						<p>Professionally, in the past 5 years, I've been a programmer, a researcher, and scientist -- and I wouldn't want to have it any other way.  I've got a strong background in programming tasks centered around big data, natural language and machine learning; but I also have a soft-spot for web development and design.</p>
+						<p>Professionally, in the past 5 years, I've been a programmer, a researcher, and scientist -- and I wouldn't want to have it any other way.  I heartily enjoy programming tasks centered around big data, natural language and machine learning, but I also have a soft-spot for web-app development.</p>
 						<p>In my spare time, I'm an avid pc-gamer and part-time dungeon master.  My collection of rpg-books would <i>petrify</i> Gary Gygax (God rest his soul).</p>
 						<p>						
 						<table id="contact-info-table">
@@ -154,6 +155,36 @@
 				<br class="clearboth" />
 			</div>
 		</div>
+	</div>
+	<div id="footer-div">
+		<div id="footer-contents">
+		<div class="current-status rounded-corners">
+			<p class="label left">Working on...</p>
+			<hr />
+			<ul>
+				<li />neopbp.com
+				<li />d20utilities
+				<li />my book!
+			</ul>
+		</div>
+		<div class="current-status rounded-corners">
+			<p class="label">Contribute to...</p>
+			<hr />
+			<ul>
+				<li />web.py
+			</ul>
+		</div>
+		<div class="current-status rounded-corners">
+			<p class="label">Improving my...</p>
+			<hr />
+			<ul>
+				<li />node.js
+				<li />Ruby on Rails
+			</ul>
+		</div>
+		<div id="license-agreement"><a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/3.0/"><img alt="Creative Commons License" style="border-width:0" src="http://i.creativecommons.org/l/by-nc-sa/3.0/80x15.png" /></a><br />This work with exception to any images is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/3.0/">Creative Commons License</a>.</div>
+		</div>
+		<!-- <br class="clearboth" /> -->
 	</div>
 </body>
 </html>
