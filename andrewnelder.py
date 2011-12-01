@@ -3,15 +3,16 @@ Created on Nov 28, 2011
 @author: andrewnelder
 '''
 
-from bottle import run, route, static_file, view
+from bottle import static_file, view, Bottle
 
-@route('/')
+resume_app = Bottle()
+
+@resume_app.route('/')
 @view('index')
 def index():
     return dict()
 
-@route('/static/<filename:re:.*>')
+@resume_app.route('/static/<filename:re:.*>')
 def server_static(filename):
     return static_file(filename, root='./static/')
 
-run(host='localhost', port=8080)
