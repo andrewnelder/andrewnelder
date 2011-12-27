@@ -71,14 +71,21 @@ img {
 	margin-right: auto;
 }
 
+#resume-button {
+	padding: 20px;
+}
+
 #license-agreement {
+	padding-bottom: 20px;
+}
+
+#license-agreement, #resume-button {
 	clear: both;
 	float: none;
 	margin: 0 auto 0 auto;
-	padding: 20px;
+/*	padding: 20px;*/
 	text-align: center;
 }
-
 
 .contact-info-image-wrapper {
 	width: 17px; height: 17px;
