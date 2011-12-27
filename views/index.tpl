@@ -191,8 +191,12 @@
 				<li>Ruby on Rails
 			</ul>
 		</div>
+    		<div style="text-align: center;">
+			<a href="../static/resume-andrewnelder.pdf" class="button">Official Resum&eacute;</a></div>
 		<div id="license-agreement"><a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/3.0/"><img alt="Creative Commons License" style="border-width:0" src="http://i.creativecommons.org/l/by-nc-sa/3.0/80x15.png" /></a><br />This work with exception to any images is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/3.0/">Creative Commons License</a>.</div>
+
 		</div>
+
     </div>
 </body>
 </html>
