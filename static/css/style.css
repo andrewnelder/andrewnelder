@@ -1,5 +1,5 @@
 body {
-  background-image: url('/static/images/themes/bg2.jpg');
+  background-image: url('../../static/images/themes/bg2.jpg');
   background-attachment: fixed;
   font-family: helvetica, arial sans-serif;
   font-size: 12px;
