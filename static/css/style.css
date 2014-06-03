@@ -42,7 +42,7 @@ img {
 .name .title { float: left; text-align: right; text-transform: uppercase; font-weight: bold; color: #808080; margin-left: 220px; margin-top: -15px; }
 
 .picture-and-social { width: 200px; margin-left: 10px; float: right; }
-.picture-and-social .profile-picture { width: 200px; height: 200px; margin:0; background-image: url('https://s.gravatar.com/avatar/404d7ab24de23aad36ad2bc93b61de4c?s=200'); }
+.picture-and-social .profile-picture { width: 200px; height: 200px; margin:0; background-image: url('//s.gravatar.com/avatar/404d7ab24de23aad36ad2bc93b61de4c?s=200'); }
 .picture-and-social .social-networks { width: 200px; margin: 0; text-align: right; }
 .picture-and-social .social-networks .social-icon { color: #000; }
 .rounded-corners { -moz-border-radius: 5px; -webkit-border-radius: 5px; -khtml-border-radius: 5px; border-radius: 5px; }
