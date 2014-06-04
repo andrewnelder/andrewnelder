@@ -24,6 +24,8 @@ img {
 }
 
 /* L A Y O U T */
+.clearboth { clear: both; }
+
 .sidebar { width: 800px; }
 .bodybar { width: 730px; padding: 20px; }
 
@@ -52,7 +54,7 @@ img {
 
 /* S K I L L S */
 .university-info { margin-bottom: 20px; }
-
+.experience-description { padding-bottom: 10px; }
 
 /* F O O T E R */
 .footer-box { width: 100%; background: #25251A; border-top: 10px solid #785C35; color: #F2EAD3; clear: both; }
@@ -60,14 +62,10 @@ img {
 .license-agreement { padding-bottom: 20px; }
 .license-agreement, .resume-button { clear: both; float: none; margin: 0 auto 0 auto; text-align: center; }
 
-.experience-description { padding-bottom: 10px; }
 
 /* S T A T U S   B A R */
 .current-status { float: left; margin: 5px; width: 200px; padding-left: 40px; min-height: 120px; border: 1px solid #785C35; }
-
 .label { font-size: 110%; font-weight: bold; padding: 10px 0 5px 0; }
-
-.clearboth { clear: both; }
 
 
 /* R E S U M E   B U T T O N */
