@@ -1,0 +1,109 @@
+.cbp-af-header {
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	background: #f6f6f6;
+	z-index: 10000;
+	height: 200px;
+	overflow: hidden;
+	-webkit-transition: height 0.3s;
+	-moz-transition: height 0.3s;
+	transition: height 0.3s;
+}
+
+.cbp-af-header .cbp-af-inner {
+	width: 90%;
+	max-width: 69em;
+	margin: 0 auto;
+	padding: 0 1.875em;
+}
+
+/* Base */
+.cbp-af-header-shrink .hr { display: block; }
+.cbp-af-header .name, .cbp-af-header nav { display: block; margin: 0 auto; text-align: center; float: none; }
+.cbp-af-header .name { text-transform: uppercase; font-family: Abe; font-size: 5em; margin-top: 30px; padding: 0; line-height: 1em; }
+.cbp-af-header nav { display: block; line-height: 1em;}
+.cbp-af-header nav a { text-decoration: none; color: #aaa; font-weight: 300; font-size: 1.0em; }
+.cbp-af-header nav a:hover { color: #333; }
+.link-pad { margin: 0 10px;	}
+
+/* Transitions and class for reduced height */
+.cbp-af-header .name, .cbp-af-header nav a {
+	-webkit-transition: all 0.3s;
+	-moz-transition: all 0.3s;
+	transition: all 0.3s;
+}
+
+/* Shrunk */
+.cbp-af-header-shrink .hr { display: none; }
+.cbp-af-header-shrink .name, .cbp-af-header-shrink nav { display: inline-block; position: relative; }
+
+.cbp-af-header.cbp-af-header-shrink {
+	height: 90px;
+}
+
+.cbp-af-header.cbp-af-header-shrink .name,
+.cbp-af-header.cbp-af-header-shrink nav a {
+	line-height: 90px;
+	margin-top: 0;
+}
+
+.cbp-af-header.cbp-af-header-shrink .name {
+	font-size: 2em;
+	float: left;
+}
+.cbp-af-header.cbp-af-header-shrink nav {
+	float: right;
+}
+
+/* Example Media Queries */
+@media screen and (max-width: 55em) {
+	
+	.cbp-af-header .cbp-af-inner {
+		width: 100%;
+	}
+
+	.cbp-af-header .name,
+	.cbp-af-header nav {
+		display: block;
+		margin: 0 auto;
+		text-align: center;
+		float: none;
+	}
+
+	.cbp-af-header .name,
+	.cbp-af-header nav a {
+		line-height: 115px;
+	}
+
+	.cbp-af-header nav a {
+		margin: 0 10px;
+	}
+
+	.cbp-af-header.cbp-af-header-shrink .name,
+	.cbp-af-header.cbp-af-header-shrink nav a {
+		line-height: 45px;
+	}
+
+	.cbp-af-header.cbp-af-header-shrink .name {
+		font-size: 2em;
+	}
+
+	.cbp-af-header.cbp-af-header-shrink nav a {
+		font-size: 1em;
+	}
+}
+
+@media screen and (max-width: 32.25em) {
+	.cbp-af-header nav a {
+		font-size: 1em;
+	}
+}
+
+@media screen and (max-width: 24em) {
+	.cbp-af-header nav a,
+	.cbp-af-header.cbp-af-header-shrink nav a {
+		line-height: 1;
+	}
+}

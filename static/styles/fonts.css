@@ -1,0 +1,21 @@
+@font-face {
+    font-family: Maven;
+    src: url(../fonts/maven/MavenProLight-100.otf);
+}
+
+@font-face {
+    font-family: Maven;
+    src: url(../fonts/maven/MavenProLight-200.otf);
+    font-weight: 200;
+}
+
+@font-face {
+    font-family: Maven;
+    src: url(../fonts/maven/MavenProLight-300.otf);
+    font-weight: 300;
+}
+
+@font-face {
+    font-family: Abe;
+    src: url(../fonts/abe/AbrahamLincoln.ttf);
+}

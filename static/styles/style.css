@@ -1,0 +1,87 @@
+body {
+	background: #f9f4ed url('../images/sil-white.png') bottom right no-repeat fixed;
+	color: #444;
+	font-family: 'Arvo', serif;
+	font-weight: 300;
+	margin: 0;
+	padding: 0;
+}
+
+strong, .strong {
+	font-weight: 700;
+}
+
+.link-target { position: relative; top: -100px; }
+
+.underline { border-bottom: 1px dashed #0080FF; }
+.hr { width: 30px; text-align: center; border: 1px dashed #aaa; margin: 0 auto 20px auto;}
+.cb { clear: both; padding-top: 50px;}
+
+/** H E A D E R **************************************************************/
+.content-header {
+	position: relative;
+	top: 0;
+	left: 0;
+	width: 100%;
+	z-index: 10000;
+	height: 400px;
+	overflow: hidden;
+	-webkit-transition: all 0.5s;
+	-moz-transition: all 0.5s;
+	transition: all 0.5s;
+}
+.content-header .content-header-inner {
+	width: 90%;
+	max-width: 69em;
+	margin: 0 auto;
+	padding: 200px 1.875em 100px 1.875em;
+}
+
+/* HR */
+.content-header .hr { display: block; color: #aaa; }
+.content-header-shrink .hr { display: none; color: #f6f6f6; }
+
+/* NAME */
+.content-header .name, .content-header .nav { display: block; margin: 0 auto; text-align: center; float: none; }
+.content-header .name { text-transform: uppercase; font-family: Abe; font-size: 5em; margin: 0; padding: 0; line-height: 1em; }
+
+/* TITLE */
+.content-header .title { font-size: 0.8em; font-weight: 200; text-align: center; }
+
+/* NAV */
+.content-header .link-pad { margin: 0 10px;	}
+.content-header .nav { display: block; line-height: 1em; font-size: 0.8em; display: none;}
+.content-header .nav a { text-decoration: none; color: #aaa; font-weight: 300; font-size: 1.0em; }
+.content-header .nav a:hover { color: #333; }
+
+/* TRANSITION */
+.content-header .name, .content-header .nav { -webkit-transition: all 0.3s; -moz-transition: all 0.3s; transition: all 0.3s; }
+.content-header.content-header-shrink { position: fixed; height: 90px; box-shadow: 0px 2px 3px #ccc; background: #f9f4ed; -webkit-transition: all 0.5s; -moz-transition: all 0.5s; transition: all 0.5s;}
+.content-header.content-header-shrink .content-header-inner { padding: 0 1.875em; }
+.content-header.content-header-shrink .name { line-height: 90px; margin: 10px 0 0 0; float: left; font-size: 3em;  }
+.content-header.content-header-shrink .nav { line-height: 90px; margin: 0; float: right; display: block;}
+.content-header.content-header-shrink .title { display: none; }
+
+/** B O D Y ******************************************************************/
+.content-body { margin-top: 0px; }
+.content-body .body-row { width: 660px; margin-left: auto; margin-right: auto; }
+.content-body .body-row .icon { width: 100px; height: 80px; font-size: 60px; float: left; text-align: center;}
+.content-body .body-row .blurb { width: 499px; float: left; border-left: 1px dashed #aaa; padding-left: 30px; min-height: 80px; display: table;}
+.content-body .body-row .blurb .blurb-inner { position: relative; display: table-cell; vertical-align: middle; line-height: 2em; }
+
+.content-body .experient { min-height: 40px; }
+.content-body .experience .shrink-expand { width: 20px; min-height: 20px; float: left; margin-right: 10px; overflow: hidden; margin-top: 2px;}
+.content-body .experience .title { width: 400px; float: left; }
+.content-body .experience .company { font-size: 0.8em; font-weight: 200; font-style: italic; clear: both; text-align: right; }
+.content-body .experience .year { font-weight: 200; float: right; width: 69; text-align: right; font-size: 0.8em; }
+.content-body .experience .overview { clear: both; padding-top: 10px; line-height: 1.5em; padding-bottom: 30px;}
+
+/* TRANSITION */
+.content-body.content-body-shrink { margin-top: 140px; }
+
+/** F O O T E R **************************************************************/
+.content-footer { margin: 100px 0 0 0; min-height: 500px; width: 100%; padding: 0; background: url('../images/sil-norm.png') no-repeat fixed bottom right;}
+.content-footer p { line-height: 1.3em; }
+.content-footer .social-networks { font-size: 3em; color: #000; text-align: center; margin-top: 50px; }
+.content-footer .social-networks .social-icon { color: #ccc; text-decoration: none; }
+.content-footer .social-networks .social-icon:hover { color: #444; text-decoration: none; }

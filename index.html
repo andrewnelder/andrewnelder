@@ -1,235 +1,199 @@
-<!DOCTYPE html>
 <html>
-<head>
-  <title>Andrew Nelder, B.Eng. EIT</title>
-  <meta charset="utf-8" />
-  <link href="./static/css/league-gothic.css" rel="stylesheet" />
-  <link href="./static/css/font-awesome.min.css" rel="stylesheet" />
-  <link href="./static/css/style.css" rel="stylesheet" type="text/css" />
-  <script type="text/javascript">
-  function rating (num, color) {
-    var output_string = "";
-    var empty_star = '<img src="./static/images/ratings/r0.gif" alt="Empty Star Rating" />';
-    var positive_star = '<img src="./static/images/ratings/r{color}.gif" alt="Positive Star Rating" />';
-    for (var i = 1; i <= 5; i++) { 
-      if (i <= num) {
-        output_string = output_string.concat(positive_star.replace('{color}', color));
-      } else {
-        output_string = output_string.concat(empty_star);
-      }
-    }
-    console.log(output_string);
-    return output_string;
-  }
-  </script>
-</head>
-<body>
+	<head>
+		<title>Andrew Nelder, BEng, EIT</title>
+		<link href='http://fonts.googleapis.com/css?family=Roboto+Slab:400,700,300,100' rel='stylesheet' type='text/css'>
+		<link href='http://fonts.googleapis.com/css?family=Oswald:400,700,300' rel='stylesheet' type='text/css'>
+		<link href='http://fonts.googleapis.com/css?family=Signika:400,600,700,300' rel='stylesheet' type='text/css'>
+		<link href='http://fonts.googleapis.com/css?family=Arvo:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
+		<link rel="stylesheet" type="text/css" href="./static/styles/fonts.css">
+		<link rel="stylesheet" type="text/css" href="./static/styles/font-awesome.css">
+		<link rel="stylesheet" type="text/css" href="./static/styles/style.css">
+		<script src="./static/js/modernizr.custom.js"></script>
+		<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js" ></script>
+	</head>
+	<body>
+	<div class="container">
 
-  <!-- Header -->
-  <div id="header-box"></div>
-
-  <div id="body-box">
-
-    <!-- Contact Information -->
-    <div id="contact-sidebar" class="sidebar">
-    <div id="contact-bodybar" class="bodybar">
-
-      <div class="name">
-        <div class="first-and-last">Andrew Nelder</div>
-        <div class="title">B.Eng. EIT</div>
-      </div>
-
-      <div class="picture-and-social">
-
-        <div class="profile-picture rounded-corners"></div>
-
-        <div class="social-networks">
-          <a href="https://github.com/andrewnelder" class="social-icon"><i class="fa fa-github-square fa-2x"></i></a>
-          <a href="http://www.linkedin.com/in/andrewnelder" class="social-icon"><i class="fa fa-linkedin-square fa-2x"></i></a>
-          <a href="http://twitter.com/#/andrewnelder" class="social-icon"><i class="fa fa-twitter-square fa-2x"></i></a>
-          <a href="http://www.facebook.com/andrewnelder" class="social-icon"><i class="fa fa-facebook-square fa-2x"></i></a>
-          <a href="http://steamcommunity.com/id/zupeanut" class="social-icon"><i class="fa fa-steam-square fa-2x"></i></a>
-        </div>
-
-      </div>
-
-      <div class="background-info">
-        <p>
-          Professionally, in the past 5 years, I've been a programmer, a researcher, and scientist -- and I wouldn't want to have it any other way.  I heartily enjoy programming tasks centered around big data, natural language and machine learning, but I also have a soft-spot for web-app and mobile development.
-        </p>
-        <p>
-          I'm a Canadian living in Hawaii, so in my spare time I do my best to get outdoors, but am also a part-time dungeon master.  My collection of rpg-books would <i>petrify</i> Gary Gygax (God rest his zombie soul).
-        </p>
-      </div>
-
-      <div class="contact-info">
-        <p>
-          <i class="fa fa-home fa-lg fa-fw"></i>&nbsp; &#35;&#50;&#45;&#49;&#48;&#56;&#32;&#77;&#105;&#108;&#111;&#32;&#76;&#110;&#46;&#44;&#32;&#72;&#111;&#110;&#111;&#108;&#117;&#108;&#117;&#44;&#32;&#72;&#97;&#119;&#97;&#105;&#105;&#44;&#32;&#85;&#83;&#65;&#44;&#32;&#57;&#54;&#56;&#49;&#51;
-        </p>
-        <p>
-          <i class="fa fa-envelope fa-lg fa-fw"></i>&nbsp; &#97;&#110;&#100;&#114;&#101;&#119;&#110;&#101;&#108;&#100;&#101;&#114;&#64;&#103;&#109;&#97;&#105;&#108;&#46;&#99;&#111;&#109;
-        </p>
-        <p>
-          <i class="fa fa-phone fa-lg fa-fw"></i>&nbsp; &#43;&#49;&#46;&#56;&#48;&#56;&#46;&#50;&#50;&#54;&#46;&#52;&#55;&#48;&#57;
-        </p>
-      </div>
-    </div>
-    </div>
-
-
-    <!-- Skills -->
-    <div id="skills-sidebar" class="sidebar">
-    <div id="skills-bodybar" class="bodybar">
-      <div class="university-info">
-        <table>
-          <tr>
-            <td class="label">University of Victoria</td>
-            <td style="text-align: right;">Victoria, B.C.</td>
-          </tr>
-          <tr>
-            <td colspan=2>Bachelor of Engineering, <i>Electrical w/ Digital Signal Processing</i></td>
-          </tr>
-        </table>
-      </div>
-      <table>
-        <tr>
-          <td colspan=6 class="label">Programming Languages</td>
-        </tr>
-        <tr>
-          <td>C/C++</td><td><script>document.write(rating(3,1));</script></td>
-          <td>Java</td><td><script>document.write(rating(4,1));</script></td>
-          <td>Python</td><td><script>document.write(rating(5,1));</script></td>
-        </tr>
-        <tr>
-          <td>Ruby</td><td><script>document.write(rating(4,1));</script></td>
-          <td>Javascript</td><td><script>document.write(rating(3,1));</script></td>
-          <td></td><td></td>
-        </tr>
-        <tr>
-          <td colspan=6 class="label">Databases</td>
-        </tr>
-        <tr>
-          <td>SQL</td><td><script>document.write(rating(4,2));</script></td>
-          <td>Redis (NoSQL)</td><td><script>document.write(rating(4,2));</script></td>
-          <td>Neo4J (GraphDB)</td><td><script>document.write(rating(5, 2));</script></td>
-        </tr>
-        <tr>
-          <td>MongoDB</td><td><script>document.write(rating(3,2));</script></td>
-          <td></td><td></td>
-          <td></td><td></td>
-        </tr>
-        <tr>
-          <td colspan=6 class="label">Web Frameworks</td>
-        </tr>
-        <tr>
-          <td>Apache TomCat</td><td><script>document.write(rating(4, 3));</script></td>
-          <td>Bottle.py / Web.py</td><td><script>document.write(rating(4, 3));</script></td>
-          <td>Ruby on Rails</td><td><script>document.write(rating(2, 3));</script></td>
-        </tr>
-        <tr>
-          <td>Socket.IO / Node.js</td><td><script>document.write(rating(4, 3));</script></td>
-          <td></td><td></td>
-          <td></td><td></td>
-        </tr>
-      </table>
-    </div>
-    </div>
-
-
-    <!-- Experience -->
-    <div id="experience-sidebar" class="sidebar">
-    <div id="experience-bodybar" class="bodybar">
-
-      <table>
-        <tr>
-          <td class="label">Software Developer / Automation Engineer</td>
-          <td class="experience-years">2012+</td>
-        </tr>
-        <tr>
-          <td class="experience-company" colspan=2>Real Geeks, LLC.</td>
-        </tr>
-        <tr>
-          <td class="experience-description" colspan=2>Worked with a small team to scale several web-applications to accomodate the company's extremely rapid growth.  Additionally, responsible for designing, building and maintaining the corporate user management and billing system for new and existing clients.</td>
-        </tr>
-        <tr>
-          <td class="label">Sr. Research Analyst / Research Lead</td>
-          <td class="experience-years">2011-2012</td>
-        </tr>
-        <tr>
-          <td class="experience-company" colspan=2>Seeker Solutions</td>
-        </tr>
-        <tr>
-          <td class="experience-description" colspan=2>Responsible for a team of researchers with a variety of academic backgrounds and managing all research into technologies related to the company's core competencies.</td>
-        </tr>
-        <tr>
-          <td class="label">Programmer Analyst</td>
-          <td class="experience-years">2009 - 2011</td>
-        </tr>
-        <tr>
-          <td class="experience-company" colspan=2>Seeker Solutions</td>
-        </tr>
-        <tr>
-          <td class="experience-description" colspan=2>Responsible for conducting research specific to the field of Natural Language Processing and determining it's impact on current or upcoming technologies. Furthermore, I am responsible for designing and developing new technologies for use in our technologies and software projects.</td>
-        </tr>
-        <tr>
-          <td class="label">Help Desk Analyst</td>
-          <td class="experience-years">2007 - 2009</td>
-        </tr>
-        <tr>
-          <td class="experience-company" colspan=2>University of Victoria</td>
-        </tr>
-        <tr>
-          <td class="experience-description" colspan=2>Responsible for addressing calls, emails, and work orders pertaining to computer problems both inside and outside of the University of Victoria network. As a certified computer hardware specialist, I diagnosed hardware issues and did minor repairs to machines.</td>
-        </tr>
-        <tr>
-          <td class="label">Software Developer</td>
-          <td class="experience-years">2006 - 2007</td>
-        </tr>
-        <tr>
-          <td class="experience-company" colspan=2>InLight Entertainment</td>
-        </tr>
-        <tr>
-          <td class="experience-description" colspan=2>Worked as a software developer making games for the LeapFrog console. I took direction from designers and was responsible for maintaining bug fixes in the iterative development environment. Gained a strong familiarity with software requirements, design, and specifications documentation.</td>
-        </tr>
-      </table>
-
-    </div>
-    </div>
-  </div>
-
-  <!-- Footer -->
-  <div class="footer-box">
-    <div class="footer-contents">
-		<div class="current-status rounded-corners">
-			<p class="label left">Working on...</p>
-			<ul>
-				<li>Objective-C / Swift
-        <li>Carbon Steed
-				<li>Myself
-			</ul>
-		</div>
-		<div class="current-status rounded-corners">
-			<p class="label">Contribute to...</p>
-			<ul>
-        <li>HabitRPG
-				<li>web.py
-			</ul>
-		</div>
-		<div class="current-status rounded-corners">
-			<p class="label">Improving my...</p>
-			<ul>
-        <li>Ruby on Rails
-        <li>French
-			</ul>
-		</div>
-    <div style="text-align: center;">
-      <a href="//docs.google.com/uc?export=download&id=1dCdWBR8TTA5P7DAFtL2-PZ7J22JT2r5NtpOpI21LWGnoEEuwjhdYdAbL-djYViiRPe1-UqOcPPXZIobj" class="button">Official Resum&eacute;</a>
-    </div>
-		<div class="license-agreement">
-      <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/3.0/"><img alt="Creative Commons License" style="border-width:0" src="http://i.creativecommons.org/l/by-nc-sa/3.0/80x15.png" /></a><br />This work with exception to any images is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/3.0/">Creative Commons License</a>.
-    </div>
+		<div class="content-header">
+			<div class="content-header-inner">
+				<div class="name">
+					Andrew Nelder
+				</div>
+				<div class="title">Engineer // Developer</div>
+				<!--<div class="hr"></div>-->
+				<div class="nav">
+					<a href="#education-target" id="education-head">Education</a>
+					<span class="link-pad">|</span>
+					<a href="#technology-target" id="technology-head">Technologies</a>
+					<span class="link-pad">|</span>
+					<a href="#experience-target" id="experience-head">Experience</a>
+					<span class="link-pad">|</span>
+					<a href="#biography-target" id="biography-head">About Me</a>
+				</div>
+			</div>
 		</div>
 
-    </div>
-</body>
+		<div class="content-body">
+			<div class="body-row" id="education">
+				<div id="education-target" class="link-target"></div>
+				<div class="icon">
+					<i class="fa fa-graduation-cap fa-fw"></i>
+				</div>
+				<div class="blurb">
+					<span class="blurb-inner">
+						<strong>Bachelors in Electrical and Computer Engineering</strong><br />
+						University of Victoria, 2009
+					</span>
+				</div>
+			</div>
+			<div class="cb"></div>
+			<div class="body-row" id="technology">
+				<div id="technology-target" class="link-target"></div>
+				<div class="icon">
+					<i class="fa fa-code fa-fw"></i>
+				</div>
+				<div class="blurb">
+					<span class="blurb-inner">
+						<strong>Python</strong><br /> Expert level understanding of Python and Python Web Development technologies including Flask and Django.<br /><br />
+						<strong>Ruby</strong><br />Strong understanding of Ruby programming language and some experience with Ruby on Rails and Sinatra.<br /><br />
+						<strong>Java</strong><br />Very strong understanding of the Java programming language and a lot of experience with a variety of Java tools and libraries.<br /><br />
+						<strong>Javascript</strong><br />Strong understanding of Javascript language, Node.js and AJAX.<br /><br />
+						<strong>Objective-C / Swift</strong><br />Learning fundamentals of iOS development in both Objective-C and Swift.  The language is simple enough to understand and use, but the in-and-outs of the nuances of the development environment require more of my attention.<br /><br />
+						<strong>Graph Databases</strong><br />Very good understanding of graph database technology as it was crucial to the development of large scale NLP solutions in my research.<br />
+					</span>
+				</div>
+			</div>
+			<div class="cb"></div>
+			<div class="body-row" id="experience">
+				<div id="experience-target" class="link-target"></div>
+				<div class="icon">
+					<i class="fa fa-cubes fa-fw"></i>
+				</div>
+				<div class="blurb">
+					<div class="experience">
+						<div class="shrink-expand"><i class="fa fa-plus-square-o fa-fw"></i></div>
+						<div class="title"><strong>Software Developer / Automation Engineer</strong></div>
+						<div class="year">2012+</div>
+						<div class="company">Real Geeks, LLC.</div>
+						<div class="overview">
+							Worked with a small team to scale several web-applications to accomodate the company's extremely rapid growth. Additionally, responsible for designing, building and maintaining the corporate user management and billing system for new and existing clients.
+							<br /><br />
+							<ul style="list-style-type: none;">
+								<li><i class="fa fa-random fa-fw"></i> - Unstructured Development</li>
+								<li><i class="fa fa-circle-o-notch fa-fw"></i> - Continuous Integration</li>
+								<li><i class="fa fa-bug fa-fw"></i> - Testing</li>
+								<li><i class="fa fa-sitemap fa-fw"></i> - Version Control (Git)</li>
+							</ul>
+						</div>
+					</div>
+					<div style="clear: both;"></div>
+					<div class="experience">
+						<div class="shrink-expand"><i class="fa fa-plus-square-o fa-fw"></i></div>
+						<div class="title"><strong>Sr. Research Analyst / Research Lead</strong></div>
+						<div class="year">2011-2012</div>
+						<div class="company">Seeker Solutions, Inc.</div>
+						<div class="overview">
+							Responsible for a team of researchers with a variety of academic backgrounds and managing all research into technologies related to the company's core competencies.
+							<br /><br />
+							<ul style="list-style-type: none;">
+								<li><i class="fa fa-refresh fa-fw"></i> - Agile Development (Scrum with Kanban)</li>
+								<li><i class="fa fa-circle-o-notch fa-fw"></i> - Continuous Integration</li>
+								<li><i class="fa fa-bug fa-fw"></i> - Testing (Unit Tests)</li>
+								<li><i class="fa fa-sitemap fa-fw"></i> - Version Control (Git)</li>
+							</ul>
+						</div>
+					</div>
+					<div style="clear: both;"></div>
+					<div class="experience">
+						<div class="shrink-expand"><i class="fa fa-plus-square-o fa-fw"></i></div>
+						<div class="title"><strong>Programmer Analyst</strong></div>
+						<div class="year">2009-2011</div>
+						<div class="company">Seeker Solutions, Inc.</div>
+						<div class="overview">
+							Responsible for conducting research specific to the field of Natural Language Processing and determining it's impact on current or upcoming technologies. Furthermore, I am responsible for designing and developing new technologies for use in our technologies and software projects.
+							<br /><br />
+							<ul style="list-style-type: none;">
+								<li><i class="fa fa-refresh fa-fw"></i> - Agile Development (Scrum)</li>
+								<li><i class="fa fa-random fa-fw"></i> - Unstructured Development</li>
+								<li><i class="fa fa-bug fa-fw"></i> - Testing</li>
+								<li><i class="fa fa-sitemap fa-fw"></i> - Version Control (Git)</li>
+							</ul>
+						</div>
+					</div>
+					<div style="clear: both;"></div>
+					<div class="experience">
+						<div class="shrink-expand"><i class="fa fa-plus-square-o fa-fw"></i></div>
+						<div class="title"><strong>Help Desk Analyst</strong></div>
+						<div class="year">2007-2009</div>
+						<div class="company">University of Victoria</div>
+						<div class="overview">
+							Responsible for addressing calls, emails, and work orders pertaining to computer problems both inside and outside of the University of Victoria network. As a certified computer hardware specialist, I diagnosed hardware issues and did minor repairs to machines.
+							<br /><br />
+							<ul style="list-style-type: none;">
+								<li><i class="fa fa-life-ring fa-fw"></i> - Phone and Email Support</li>
+								<li><i class="fa fa-random fa-fw"></i> - Unstructured Development</li>
+							</ul>
+						</div>
+					</div>
+					<div style="clear: both;"></div>
+					<div class="experience">
+						<div class="shrink-expand"><i class="fa fa-plus-square-o fa-fw"></i></div>
+						<div class="title"><strong>Software Developer / Game Developer</strong></div>
+						<div class="year">2006-2007</div>
+						<div class="company">InLight Entertainment</div>
+						<div class="overview">
+							Worked as a software developer making games for the LeapFrog console. I took direction from designers and was responsible for maintaining bug fixes in the iterative development environment. Gained a strong familiarity with software requirements, design, and specifications documentation.
+							<br /><br />
+							<ul style="list-style-type: none;">
+								<li><i class="fa fa-sort-amount-desc fa-fw"></i> - Waterfall Development</li>
+								<li><i class="fa fa-bug fa-fw"></i> - Testing</li>
+								<li><i class="fa fa-sitemap fa-fw"></i> - Version Control (SVN)</li>
+							</ul>
+						</div>
+					</div>
+					<div style="clear: both;"></div>
+					<div class="experience">
+						<div class="shrink-expand"><i class="fa fa-plus-square-o fa-fw"></i></div>
+						<div class="title"><strong>Technical Support Representative</strong></div>
+						<div class="year">2004</div>
+						<div class="company">MSN Technical Support / RMH/NCO Group</div>
+						<div class="overview">
+							Worked alone taking phone calls for MSN Dial-up Service customers.
+							<br /><br />
+							<ul style="list-style-type: none;">
+								<li><i class="fa fa-life-ring fa-fw"></i> - Phone Support</li>
+							</ul>
+						</div>
+					</div>
+					<div style="clear: both;"></div>
+				</div>
+			</div>
+		</div>
+		<div style="clear: both;"></div>
+	</div>
+	<div class="content-footer">
+		<div id="biography-target" class="link-target"></div>
+		<div style="width: 660; margin: auto;" id="biography">
+			<p>Professionally, in the past 5 years, I've been a programmer, a researcher, and scientist -- and I wouldn't want to have it any other way. I heartily enjoy programming tasks centered around big data, natural language and machine learning, but I also have a soft-spot for web-app and mobile development.</p>
+			<p>I'm a Canadian living in Hawaii, so in my spare time I do my best to get outdoors, but am also a part-time dungeon master. My collection of rpg-books would probably <i>petrify</i> Gary Gygax (God rest his zombie soul).</p>
+		</div>
+		<div class="social-networks">
+			<a href="https://github.com/andrewnelder" class="social-icon"><i class="fa fa-github-square fa-fw"></i></a>
+        	<a href="http://www.linkedin.com/in/andrewnelder" class="social-icon"><i class="fa fa-linkedin-square fa-fw"></i></a>
+        	<a href="http://twitter.com/#/andrewnelder" class="social-icon"><i class="fa fa-twitter-square fa-fw"></i></a>
+        	<a href="http://www.facebook.com/andrewnelder" class="social-icon"><i class="fa fa-facebook-square fa-fw"></i></a>
+        	<a href="http://steamcommunity.com/id/zupeanut" class="social-icon"><i class="fa fa-steam-square fa-fw"></i></a>
+		</div>
+		<div style="width: 660; margin: auto; text-align: center;">
+			<p>
+				108 Milo Ln., Apt. B<br />
+				Honolulu, HI  &nbsp;96813  &nbsp; USA<br />
+				andrewnelder@gmail.com<br />
+				808.226.4709
+			</p>
+		</div>
+	</div>
+	<script src="./static/js/classie.js"></script>
+	<script src="./static/js/cbpAnimatedHeader.js"></script>
+	</body>
 </html>
