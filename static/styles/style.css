@@ -11,6 +11,9 @@ strong, .strong {
 	font-weight: 700;
 }
 
+.button { background-color: #1bbc9b; border: none; padding: 10px 40px; border-radius: 8px; color: #fff; text-decoration: none; }
+.button:hover { background-color:#57a293; }
+
 .link-target { position: relative; top: -100px; }
 
 .underline { border-bottom: 1px dashed #bbb; }
@@ -82,7 +85,7 @@ strong, .strong {
 .content-body.content-body-shrink { margin-top: 140px; }
 
 /** F O O T E R **************************************************************/
-.content-footer { margin: 100px 0 0 0; min-height: 500px; width: 100%; padding: 0; background: url('../images/sil-norm.png') no-repeat fixed bottom right;}
+.content-footer { margin: 100px 0 0 0; min-height: 400px; width: 100%; padding: 0; background: url('../images/sil-norm.png') no-repeat fixed bottom right;}
 .content-footer p { line-height: 1.3em; }
 .content-footer .social-networks { font-size: 3em; color: #000; text-align: center; margin-top: 50px; }
 .content-footer .social-networks .social-icon { color: #ccc; text-decoration: none; }
